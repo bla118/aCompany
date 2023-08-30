@@ -1,0 +1,148 @@
+.home {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+  text-align: center;
+  min-height: 100vh; 
+}
+
+.intro-container {
+  max-width: 75vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.intro-content {
+  flex: 1;
+  padding-right: 20px; 
+}
+
+.intro-container h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.intro-container h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.intro-image img {
+  max-width: 100%;
+  
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+.benefits-container {
+  max-width: 75vw;
+  margin: 40px auto;
+}
+
+.benefits h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.benefits {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; 
+}
+
+.benefit {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.benefit-icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.benefit h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.client-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.client-logo {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.client-logo a {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.client-logo a:hover {
+  transform: scale(1.1); 
+}
+
+.client-logo img:hover {
+  opacity: 0.8; 
+}
+
+@media (max-width: 960px) {
+  .intro-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .intro-content {
+    padding-right: 0; 
+    padding-bottom: 20px; 
+  }
+
+  .intro-image img {
+    max-width: 100%; 
+    margin-top: 20px;
+  }
+
+  .benefits {
+    flex-direction: column;
+    gap: 20px; 
+  }
+
+  .benefit {
+    padding: 20px;
+    margin-bottom: 20px; 
+  }
+}
+
