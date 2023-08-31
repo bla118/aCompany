@@ -12,7 +12,6 @@ const Home = () => {
       <section className='intro-container'>
         <div className='intro-content'>
           <h2>Welcome to ICICOM Solutions</h2>
-          Test: {process.env.REACT_APP_SERVICE_ID}
           <h4>Unlocking Your Business Potential Through Expert ERP Consultation</h4>
           <p>
             At ICICOM Solutions, we're dedicated to propelling your business forward with our top-tier ERP consultation services. With a wealth of experience and a deep understanding of Enterprise Resource Planning (ERP) systems, we're your trusted partner in optimizing your operations for peak efficiency and growth.

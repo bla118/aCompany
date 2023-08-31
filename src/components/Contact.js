@@ -1,9 +1,18 @@
 import './Contact.css';
 import Modal from './Modal'; 
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser'; 
 
 const Contact = () => {
+  const [key, setKey] = useState('');
+  const [service, setService] = useState('');
+  const [template, setTemplate] = useState('');
+  useEffect(() => {
+    setKey(process.env.REACT_APP_API_KEY);
+    setService(process.env.REACT_APP_SERVICE_ID);
+    setTemplate(process.env.REACT_APP_TEMPLATE_ID);
+  }, []);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -26,10 +35,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
+        service,
+        template,
         form.current,
-        process.env.REACT_APP_API_KEY
+        key
       )
       .then(
         (result) => {
