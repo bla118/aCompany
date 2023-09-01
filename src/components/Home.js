@@ -46,7 +46,7 @@ const Home = () => {
       </section>
 
       <section className='clients-container'>
-        <h3>Trusted by Leading Companies</h3>
+        <h3>Clients</h3>
         <div className='client-logos'>
           {companies.map((company, index) => (
             <div key={index} className='client-logo'>
