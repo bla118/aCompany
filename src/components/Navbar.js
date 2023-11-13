@@ -22,7 +22,7 @@ const Navbar = () => {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={handleScrollToTop}>
-            ICICOM Solutions <img className='logo' src={'IS_logo.png'} alt='Logo' />
+            aCompany <img className='logo' src={'IS_logo.png'} alt='Logo' />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fa-solid fa-bars'} />

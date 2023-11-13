@@ -115,6 +115,11 @@
   transition: transform 0.3s;
 }
 
+.client-logo img {
+  width: 200px;
+  height: 200px;
+}
+
 .client-logo a:hover {
   transform: scale(1.1); 
 }
